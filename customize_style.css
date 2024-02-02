@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url(photos/download.jpeg);
+            color: #bb2a2a;
+        }
+
+        /* Styling for the header section */
+        header {
+            background-color: None;
+            background-position: absolute;
+            color: #fff;
+            padding: 80px;
+            text-align: center;
+            position: relative;
+        }
+
+        /* Styling for the logo in the header */
+        .logo {
+            max-width: 150px;
+            height:auto;
+            margin-right: 10px;
+            position: absolute;
+            top: 15px;
+            left: 5px;
+        }
+
+        /* Styling for the main heading in the header */
+        h1 {
+            margin: 0 auto; /* Center the heading horizontally */
+            max-width: 80%; /* Limit the width to avoid stretching on larger screens */
+        }
+
+        .container {
+            display: flex;
+          }
+          
+        .sidebar {
+        height: 100%;
+        width: 0;
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        background-color: #ffffff;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+        }
+        
+        .sidebar a {
+        padding: 15px 20px;
+        text-decoration: none;
+        font-size: 18px;
+        color: #800000;
+        display: block;
+        transition: 0.3s;
+        }
+        
+        .sidebar a:hover {
+        color: #9e1717;
+        }
+        
+        .sidebar .active {
+        color: #9e1717;
+        }
+        
+        .open-btn {
+        font-size: 20px;
+        cursor: pointer;
+        background-color: #ffffff;
+        color: #800000;
+        border: none;
+        border-radius: 5px;
+        padding: 15px 20px;
+        position: absolute;
+        z-index: 2;
+        right: 0;
+        top: 20px; /* Adjust the top position */
+        }
+        
+        .hamburger {
+            width: 30px;
+            height: 3px;
+            background-color: #800000;
+            margin: 6px 0;
+            }
+        
+        .open-btn:hover {
+        background-color: #ffffff;
+        }
+        
+        /* Styling for main content section */
+        /* section {
+            padding: 30px;
+            margin: 20px;
+        } */
+
+        /* Styling for the container of flowers */
+        .flower-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        /* Styling for individual flowers */
+        .flower {
+            border: 1px solid #ddd;
+            margin: 10px;
+            /* padding: 2px; */
+            text-align: center;
+            background-color: #fff;
+            border-radius: 5px;
+            display: inline-block;
+            width: 200px;
+            overflow: hidden;
+            position: relative;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        /* Styling for flower hover effect */
+        .flower:hover {
+            transform: scale(1.05);
+        }
+
+        /* Styling for flower images */
+        .flower img {
+            max-width: auto;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        /* Styling for the counter below each flower */
+        .counter {
+            margin-top: 10px;
+            font-size: 18px;
+        }
+
+        /* Styling for common buttons */
+        .btn {
+            background-color: #800000;
+            color: #fff;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            margin-right: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        /* Styling for button hover effect */
+        .btn:hover {
+            background-color: #a02222;
+        }
+
+        /* Styling for total flowers counter */
+        .total-counter {
+            font-size: 14px;
+            color: #ffffff;
+            margin-top: 5px;
+        }
+
+        
+        
+        @media screen and (max-width: 600px) {
+            
+            .sidebar {
+                padding-top: 15px;
+            }
+            
+            .sidebar a {
+                font-size: 16px;
+            }
+        
+            .open-btn {
+                top: 10px;
+            }
+        
+            .flower {
+                width: 40%; /* Adjust width for smaller screens */
+                height: auto;
+            }
+        
+            .logo {
+                max-width: 100%; /* Make the logo take up 100% of its container width */
+                position: static; /* Remove absolute positioning */
+                margin-bottom: 20px; /* Add some margin for better spacing */
+            }
+        }
+
