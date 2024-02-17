@@ -1,100 +1,98 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
 /* General styling for the body */
 body {
-    font-family: Georgia, serif;    margin: 0;
-    padding: 0;
-    background-image: url(photos/download.jpeg);
-    color: #333;
+  font-family: Georgia, serif;
+  margin-left: 30px;
+  padding: 0;
+  background-image: url(photos/download.jpeg);
+  color: #333;
 }
 .container {
-    display: flex;
-  }
-  
+  display: flex;
+}
+
 .sidebar {
-height: 100%;
-width: 0;
-position: fixed;
-z-index: 1;
-top: 0;
-right: 0;
-background-color: #ffffff;
-overflow-x: hidden;
-transition: 0.5s;
-padding-top: 60px;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #ffffff;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
 }
 
 .sidebar a {
-padding: 15px 20px;
-text-decoration: none;
-font-size: 18px;
-color: #800000;
-display: block;
-transition: 0.3s;
+  padding: 15px 20px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #800000;
+  display: block;
+  transition: 0.3s;
 }
 
 .sidebar a:hover {
-color: #9e1717;
+  color: #9e1717;
 }
 
 .sidebar .active {
-color: #9e1717;
+  color: #9e1717;
 }
 
 .open-btn {
-font-size: 20px;
-cursor: pointer;
-background-color: #ffffff;
-color: #800000;
-border: none;
-border-radius: 5px;
-padding: 15px 20px;
-position: fixed;
-z-index: 2;
-right: 0;
-top: 20px; /* Adjust the top position */
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #ffffff;
+  color: #800000;
+  border: none;
+  border-radius: 5px;
+  padding: 15px 20px;
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  top: 20px; /* Adjust the top position */
 }
 
 .hamburger {
-    width: 30px;
-    height: 3px;
-    background-color: #800000;
-    margin: 6px 0;
-    }
-
-.open-btn:hover {
-background-color: #ffffff;
+  width: 30px;
+  height: 3px;
+  background-color: #800000;
+  margin: 6px 0;
 }
 
+.open-btn:hover {
+  background-color: #ffffff;
+}
 
 /* Styling for the header section */
 header {
-    background-color: None;
-    background-position: absolute;
-    color: #fff;
-    padding: 30px;
-    text-align: center;
-    position: relative;
+  background-color: None;
+  background-position: absolute;
+  color: #fff;
+  padding: 30px;
+  text-align: center;
+  position: relative;
 }
-
 
 /* Styling for the logo */
 .logo {
-    max-width: 150px;
-    position: relative;
-    height: auto;
-    margin-right: 10px;
-    position: absolute;
-    top: 10px;
-    left: 5px;
+  max-width: 150px;
+  position: relative;
+  height: auto;
+  margin-right: 10px;
+  position: absolute;
+  top: 10px;
+  left: 5px;
+  cursor: pointer;
 }
 
 /* Styling for the main heading */
 h1 {
-    position: relative;
-    font-size: 250%;
+  position: relative;
+  font-size: 250%;
 }
-
-
 
 /* Styling for the main content section */
 /* section {
@@ -104,55 +102,55 @@ h1 {
 /* Styling for the category title in product sections */
 /* Centering category title */
 .category-title {
-    color: white;
-    font-size: 1.5em;
-    margin-bottom: 15px;
-    margin-top: 40px;
-    text-align: center;
+  color: white;
+  font-size: 1.5em;
+  margin-bottom: 15px;
+  margin-top: 40px;
+  text-align: center;
 }
 
 /* Styling for product containers */
 .product-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 /* Styling for individual products */
 .product {
-    border: 1px solid #ddd;
-    margin: 8px;
-    padding: 15px;
-    text-align: center;
-    background-color: #fff;
-    border-radius: 5px;
-    display: inline-block;
-    width: 200px;
-    overflow: hidden;
-    position: relative;
-    transition: transform 0.3s ease-in-out;
+  border: 1px solid #ddd;
+  margin: 8px;
+  padding: 15px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 5px;
+  display: inline-block;
+  width: 200px;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s ease-in-out;
 }
 
 /* Styling for product images */
 .product img {
-    max-width: 100%;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 5px;
+  max-width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
 }
 
 /* Styling for product titles */
 .product h2 {
-    color: #800000;
-    font-size: 1.2em;
-    margin-bottom: 10px;
+  color: #800000;
+  font-size: 1.2em;
+  margin-bottom: 10px;
 }
 
 /* Styling for product descriptions */
 .product p {
-    color: #888;
-    font-size: 0.9em;
-    margin-bottom: 10px;
+  color: #888;
+  font-size: 0.9em;
+  margin-bottom: 10px;
 }
 
 /* Styling for order and customize buttons */
@@ -171,117 +169,135 @@ h1 {
 /* Styling for hover effect on order and customize buttons */
 .order-btn:hover,
 .customize-btn:hover {
-    box-shadow: .5px .5px 150px #252525;
+  box-shadow: 0.5px 0.5px 150px #252525;
 }
 .order-btn::after {
-    content: "Lets go!";
-    height: 50px;
-    width: 150px;
-    background-color: #008080;
-    color: #fff;
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    transform: translateY(50px);
-    font-size: 1.2rem;
-    font-weight: 600;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.5s ease-in-out;
-  }
-  
-  .order-btn::before {
-    content: "Hover Me";
-    height: 50px;
-    width: 150px;
-    background-color: #fff;
-    color: #008080;
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    transform: translateY(0px) scale(1.2);
-    font-size: 1.2rem;
-    font-weight: 600;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.5s ease-in-out;
-  }
-  
-  .order-btn:hover::after {
-    transform: translateY(0) scale(1.2);
-  }
-  
-  .order-btn::before {
-    transform: translateY(-50px) scale(0) rotate(120deg);
-  }
+  content: "Lets go!";
+  height: 50px;
+  width: 150px;
+  background-color: #008080;
+  color: #fff;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  transform: translateY(50px);
+  font-size: 1.2rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease-in-out;
+}
+
+.order-btn::before {
+  content: "Hover Me";
+  height: 50px;
+  width: 150px;
+  background-color: #fff;
+  color: #008080;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  transform: translateY(0px) scale(1.2);
+  font-size: 1.2rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease-in-out;
+}
+
+.order-btn:hover::after {
+  transform: translateY(0) scale(1.2);
+}
+
+.order-btn::before {
+  transform: translateY(-50px) scale(0) rotate(120deg);
+}
 /* Styling for hover effect on products */
 .product:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 .fa-container {
-    text-align: center;
-  }
-  
-  .fa {
-    padding: 20px;
-    font-size: 30px;
-    width: 50px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    border-radius: 20px;
-  }
-  
-  .fa:hover {
-    opacity: 0.7;
-  }
-  
-  .fa-facebook {
-    background: #3B5998;
-    color: white;
-  }
-  
-  .fa-instagram {
-    background: #600080;
-    color: white;
-  }
-/* Styling for the footer */
-footer {
-    background-color: None;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    bottom: 0;
-    width: 100%;
-    
+  text-align: center;
 }
 
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 20px;
+}
 
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+
+.fa-instagram {
+  background: #600080;
+  color: white;
+}
+/* Styling for the footer */
+footer {
+  background-color: None;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  bottom: 0;
+  width: 100%;
+}
+#toTopBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: rgb(255, 252, 252); /* Set a background color */
+  color: #800000; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#toTopBtn:hover {
+  background-color: #9e171781; /* Add a dark-grey background on hover */
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
 
 @media screen and (max-width: 600px) {
-    .header {
-        max-width: 100%; /* Allow full width on smaller screens */
-    }
-    .sidebar {
-      padding-top: 15px;
-    }
-  
-    .sidebar a {
-      font-size: 16px;
-    }
-  
-    .open-btn {
-      top: 10px;
-    }
-    .product {
-        width: 33%; /* Full width on smaller screens */
-        height: auto; /* Reset height for smaller screens */
-    }
-    .logo {
-        max-width: 100%; /* Make the logo take up 100% of its container width */
-        position: static; /* Remove absolute positioning */
-        margin-bottom: 20px; /* Add some margin for better spacing */
-      }
+  .header {
+    max-width: 100%; /* Allow full width on smaller screens */
   }
+  .sidebar {
+    padding-top: 15px;
+  }
+
+  .sidebar a {
+    font-size: 16px;
+  }
+
+  .open-btn {
+    top: 10px;
+  }
+  .product {
+    width: 33%; /* Full width on smaller screens */
+    height: auto; /* Reset height for smaller screens */
+  }
+  .logo {
+    max-width: 100%; /* Make the logo take up 100% of its container width */
+    position: static; /* Remove absolute positioning */
+    margin-bottom: 20px; /* Add some margin for better spacing */
+  }
+}
