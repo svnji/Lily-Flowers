@@ -7,7 +7,7 @@
     
     <title>Lily Flowers</title>
     <link rel="stylesheet" href="style.css">   
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <link rel="icon" href="logos/fotor-20240124202619.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
@@ -19,8 +19,9 @@
 
 <body>
     <header>
-        <img src="logos/last-logo.png" alt="Logo" class="logo">
-        <h1>LILY FLOWERS</h1>
+        <img src="logos/last-logo.png" alt="Logo" class="logo" onclick="goToIndex()">
+        <h1 id = "mainTitle" onclick="goToIndex()">LILY FLOWERS</h1>
+        <button id="toTopBtn" onclick="topFunction()">to top</button>
     </header>
     
 
@@ -1152,7 +1153,6 @@
         <a href="https://www.instagram.com/lilyflowers116?fbclid=IwAR1TmfwH192197PJLU9jlx6J9lTqvHPwE1eg1CoqKWOupVL_Uru4WMPCKLc"target="_blank" class="fa fa-instagram"></a>
     </div>
         <footer>
-            &copy; The Best In The West
-        | All rights reserved ® svnji
+            &copy; The Best In The West <p style="font-size: 11px;"">All rights reserved ® svnji</p>
         </footer>
 </html>
