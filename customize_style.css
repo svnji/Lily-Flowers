@@ -183,8 +183,9 @@
             .flower {
                 width: 40%; /* Adjust width for smaller screens */
                 height: auto;
-                margin: 9px;
-                padding-right: 12px;
+                margin: 2%;
+                padding: 1%;
+                margin-left: 3.7%;
             }
         
             .logo {
