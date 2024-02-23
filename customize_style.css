@@ -183,10 +183,12 @@
             .flower {
                 width: 40%; /* Adjust width for smaller screens */
                 height: auto;
+                margin: 9px;
+                padding-right: 12px;
             }
         
             .logo {
-                max-width: 100%; /* Make the logo take up 100% of its container width */
+                max-width: 50%; /* Make the logo take up 100% of its container width */
                 position: static; /* Remove absolute positioning */
                 margin-bottom: 20px; /* Add some margin for better spacing */
             }
