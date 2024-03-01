@@ -280,7 +280,7 @@ footer {
     max-width: 100%; /* Allow full width on smaller screens */
   }
   .sidebar {
-    padding-top: 15px;
+    padding-top: 12px;
   }
 
   .sidebar a {
@@ -288,10 +288,11 @@ footer {
   }
 
   .open-btn {
-    top: 10px;
+    top: 14px;
+    right: 24px;
   }
   .product {
-    width: 36%; /* Adjust width for smaller screens */
+    width: 37%; /* Adjust width for smaller screens */
     height: 1.6%;
     margin: 1%;
     margin-left: 5.6%;
@@ -323,5 +324,125 @@ footer {
     position: static; /* Remove absolute positioning */
     margin-bottom: 20px; /* Add some margin for better spacing */
     cursor: pointer;
+  }
+  .order-btn,
+  .customize-btn {
+    height: 50px;
+    width: 150px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+  }
+
+  /* Styling for hover effect on order and customize buttons */
+  .order-btn:hover,
+  .customize-btn:hover {
+    box-shadow: 0.5px 0.5px 150px #252525;
+  }
+  .order-btn::after {
+    content: "Lets go!";
+    height: 50px;
+    width: 150px;
+    background-color: #008080;
+    color: #fff;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transform: translateY(50px);
+    font-size: 1.2rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .order-btn::before {
+    content: "Hover Me";
+    height: 50px;
+    width: 150px;
+    background-color: #fff;
+    color: #008080;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transform: translateY(0px) scale(1.2);
+    font-size: 1.2rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .order-btn:hover::after {
+    transform: translateY(0) scale(1.2);
+  }
+
+  .order-btn::before {
+    transform: translateY(-50px) scale(0) rotate(120deg);
+  }
+  .order-btn,
+  .customize-btn {
+    height: 50px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+  }
+
+  /* Styling for hover effect on order and customize buttons */
+  .order-btn:hover,
+  .customize-btn:hover {
+    box-shadow: 0.5px 0.5px 100% #252525;
+  }
+  .order-btn::after {
+    content: "Lets go!";
+    height: 50px;
+    width: 100%;
+    background-color: #008080;
+    color: #fff;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transform: translateY(50px);
+    font-size: 1.2rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .order-btn::before {
+    content: "Hover Me";
+    height: 50px;
+    width: 100%;
+    background-color: #fff;
+    color: #008080;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transform: translateY(0px) scale(1.2);
+    font-size: 1.2rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .order-btn:hover::after {
+    transform: translateY(0) scale(1.2);
+  }
+
+  .order-btn::before {
+    transform: translateY(-50px) scale(0) rotate(120deg);
   }
 }
