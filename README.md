@@ -11,7 +11,7 @@ Responsive Design: The website is optimized for both desktop and mobile devices.
 Interactive UI: Engaging and user-friendly interface. 
 
 # Demo
-You can try out the live demo here.
+You can try out the live demo [here](https://lily-flower.netlify.app/).
 
 Installation
 
