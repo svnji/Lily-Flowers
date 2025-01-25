@@ -4,7 +4,8 @@ body {
   font-family: Georgia, serif;
   margin: 0;
   padding: 0;
-  background-image: url(photos/download.jpeg);
+  background-color: #f4d8e0;
+  /* background-image: url(photos/download.jpeg); */
   color: #333;
 }
 .container {
@@ -18,7 +19,7 @@ body {
   z-index: 1;
   top: 0;
   right: 0;
-  background-color: #ffffff;
+  background-color: #f4d8e0;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
@@ -28,24 +29,24 @@ body {
   padding: 15px 20px;
   text-decoration: none;
   font-size: 18px;
-  color: #800000;
+  color: black;
   display: block;
   transition: 0.3s;
 }
 
 .sidebar a:hover {
-  color: #9e1717;
+  color: #000000;
 }
 
 .sidebar .active {
-  color: #9e1717;
+  color: #000000;
 }
 
 .open-btn {
   font-size: 20px;
   cursor: pointer;
-  background-color: #ffffff;
-  color: #800000;
+  background-color:#f4d8e0;
+  color: #f4d8e0;
   border: none;
   border-radius: 5px;
   padding: 15px 20px;
@@ -58,12 +59,12 @@ body {
 .hamburger {
   width: 30px;
   height: 3px;
-  background-color: #800000;
+  background-color: black;
   margin: 6px 0;
 }
 
 .open-btn:hover {
-  background-color: #ffffff;
+  background-color: #f4d8e0;
 }
 
 /* Styling for the header section */
@@ -71,7 +72,7 @@ header {
   background-color: None;
   background-position: absolute;
   color: #fff;
-  padding: 30px;
+  padding: 55px;
   text-align: center;
   position: relative;
 }
@@ -90,7 +91,28 @@ header {
 /* Styling for the main heading */
 h1 {
   position: relative;
+  border: 1px solid;
+  border-inline: black;
   font-size: 250%;
+  color: black;
+  text-shadow: 
+    -1px -1px 0 #ffffff,  
+    1px -1px 0 #ffffff,
+    -1px 1px 0 #ffffff,
+    1px 1px 0 #ffffff;
+}
+
+#express {
+  position: relative;
+  font-size: 100%;
+  color: black;
+  font-family: 'Pacifico', cursive;
+  text-shadow: 
+    -1px -1px 0 #ffffff,  
+    1px -1px 0 #ffffff,
+    -1px 1px 0 #ffffff,
+    1px 1px 0 #ffffff;
+    margin-bottom: -30px;
 }
 
 /* Styling for the main content section */
@@ -101,11 +123,19 @@ h1 {
 /* Styling for the category title in product sections */
 /* Centering category title */
 .category-title {
-  color: white;
+  color: black;
   font-size: 1.5em;
+  font-weight: bold;
   margin-bottom: 15px;
-  margin-top: 40px;
+  margin-top: 0px;
   text-align: center;
+  border: 1px solid;
+  border-inline: black;
+  text-shadow: 
+    -1px -1px 0 #ffffff,  
+    1px -1px 0 #ffffff,
+    -1px 1px 0 #ffffff,
+    1px 1px 0 #ffffff;
 }
 
 /* Styling for product containers */
@@ -121,7 +151,7 @@ h1 {
   margin: 0.5%;
   padding: 0.3%;
   text-align: center;
-  background-color: #fff;
+  background-color: None;
   border-radius: 5px;
   display: inline-block;
   width: 200px;
@@ -132,17 +162,19 @@ h1 {
 
 /* Styling for product images */
 .product img {
-  max-width: 100%;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 5px;
+  /* background: transparent; */
+  width: 60%;
+  height: 100%;
+  object-fit:fill;
+  /* border-radius: 5px; */
 }
 
 /* Styling for product titles */
 .product h2 {
-  color: #800000;
+  color: black;
   font-size: 1.2em;
   margin-bottom: 10px;
+  
 }
 
 /* Styling for product descriptions */
@@ -175,7 +207,7 @@ h1 {
   height: 50px;
   width: 150px;
   background-color: #008080;
-  color: #fff;
+  color: #f4d8e0;
   position: absolute;
   top: 0%;
   left: 0%;
@@ -192,7 +224,7 @@ h1 {
   content: "Hover Me";
   height: 50px;
   width: 150px;
-  background-color: #fff;
+  background-color: #f4d8e0;
   color: #008080;
   position: absolute;
   top: 0%;
@@ -247,7 +279,7 @@ h1 {
 /* Styling for the footer */
 footer {
   background-color: None;
-  color: #fff;
+  color: #f4d8e0;
   text-align: center;
   padding: 10px;
   bottom: 0;
@@ -262,7 +294,7 @@ footer {
   border: none; /* Remove borders */
   outline: none; /* Remove outline */
   background-color: rgb(255, 252, 252); /* Set a background color */
-  color: #800000; /* Text color */
+  color: black; /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */
   padding: 15px; /* Some padding */
   border-radius: 10px; /* Rounded corners */
@@ -270,8 +302,8 @@ footer {
 }
 
 #toTopBtn:hover {
-  background-color: #9e171781; /* Add a dark-grey background on hover */
-  color: white;
+  background-color: black; /* Add a dark-grey background on hover */
+  color: #f4d8e0;
   transition: all 0.3s ease-in-out;
 }
 
@@ -307,7 +339,7 @@ footer {
 
   /* Styling for product titles */
   .product h2 {
-    color: #800000;
+    color: black;
     font-size: 1em;
     margin-bottom: 10px;
   }
@@ -347,7 +379,7 @@ footer {
     height: 50px;
     width: 150px;
     background-color: #008080;
-    color: #fff;
+    color: #f4d8e0;
     position: absolute;
     top: 0%;
     left: 0%;
@@ -364,7 +396,7 @@ footer {
     content: "Hover Me";
     height: 50px;
     width: 150px;
-    background-color: #fff;
+    background-color: #f4d8e0;
     color: #008080;
     position: absolute;
     top: 0%;
@@ -407,7 +439,7 @@ footer {
     height: 50px;
     width: 100%;
     background-color: #008080;
-    color: #fff;
+    color: #f4d8e0;
     position: absolute;
     top: 0%;
     left: 0%;
@@ -424,7 +456,7 @@ footer {
     content: "Hover Me";
     height: 50px;
     width: 100%;
-    background-color: #fff;
+    background-color: #f4d8e0;
     color: #008080;
     position: absolute;
     top: 0%;
